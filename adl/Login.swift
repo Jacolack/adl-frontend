@@ -20,7 +20,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        performExistingAccountSetupFlows()
     }
     
     /// - Tag: add_appleid_button
@@ -78,35 +77,48 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                          
                         do {
                             let jsonData = try encoder.encode(newUser)
-                            let _ = ADLRequest.postRequest(url: "/login", object: jsonData)
+                            let createUser = UIAlertController(title: "Creating User", message: nil, preferredStyle: .alert)
+                            self.present(createUser, animated: true, completion: nil)
+                            ADLRequest.postRequest(givenUrl: "users/create", object: jsonData, callback: {(succ, resp) in
+                                DispatchQueue.main.async {
+
+                                if (succ) {
+                                    self.saveUserInKeychain(String(resp! as! Int))
+                                    createUser.dismiss(animated: true) {
+                                        self.dismiss(animated: true, completion: nil)
+                                    }
+                                } else {
+                                    ADLRequest.showError(title: "Error", message: (resp as! String), vc: self)
+                                }
+                            }
+                            }
+                            )
                         } catch {
                             print("Error encoding object")
                         }
                     }
                 }
             } else {
-                ADLRequest.getUserID(token: userIdentifier)
+                let signInUser = UIAlertController(title: "Signing In", message: nil, preferredStyle: .alert)
+                self.present(signInUser, animated: true, completion: nil)
+                ADLRequest.getUserID(token: userIdentifier, callback: {(succ, resp) in
+                    DispatchQueue.main.async {
+                    if (succ) {
+                        self.saveUserInKeychain(String(resp! as! Int))
+                            signInUser.dismiss(animated: true) {
+                                self.dismiss(animated: true, completion: nil)
+                            }
+                    } else {
+                        ADLRequest.showError(title: "Error", message: (resp as! String), vc: self)
+                    }
+                    }
+                })
+                
             }
             
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
             // For the purpose of this demo app, store the `userIdentifier` in the keychain.
-            self.saveUserInKeychain(userIdentifier)
             
             // For the purpose of this demo app, show the Apple ID credential information in the `ResultViewController`.
-            self.showResultViewController(userIdentifier: userIdentifier, fullName: fullName, email: email)
         
         case let passwordCredential as ASPasswordCredential:
         
@@ -115,10 +127,8 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
             let password = passwordCredential.password
             
             // For the purpose of this demo app, show the password credential as an alert.
-            DispatchQueue.main.async {
-                self.showPasswordCredentialAlert(username: username, password: password)
-            }
-            
+            ADLRequest.showError(title: "Error", message: "idk", vc: self)
+
         default:
             break
         }
@@ -126,30 +136,16 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
     
     private func saveUserInKeychain(_ userIdentifier: String) {
         do {
-            try KeychainItem(service: "com.example.apple-samplecode.juice", account: "userIdentifier").saveItem(userIdentifier)
+            try KeychainItem(service: "com.jacksheridan.adl", account: "userIdentifier").saveItem(userIdentifier)
         } catch {
             print("Unable to save userIdentifier to keychain.")
         }
     }
-    
-    private func showResultViewController(userIdentifier: String, fullName: PersonNameComponents?, email: String?) {
-        let alertController = UIAlertController(title: "Success", message: "nice", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-    private func showPasswordCredentialAlert(username: String, password: String) {
-        let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
-        let alertController = UIAlertController(title: "Keychain Credential Received",
-                                                message: message,
-                                                preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
+        
     /// - Tag: did_complete_error
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
         // Handle error.
+        ADLRequest.showError(title: "Error", message: error.localizedDescription, vc: self)
     }
 }
 
@@ -159,16 +155,3 @@ extension LoginViewController: ASAuthorizationControllerPresentationContextProvi
         return self.view.window!
     }
 }
-
-extension UIViewController {
-    
-    func showLoginViewController() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let loginViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController {
-            loginViewController.modalPresentationStyle = .formSheet
-            loginViewController.isModalInPresentation = true
-            self.present(loginViewController, animated: true, completion: nil)
-        }
-    }
-}
-

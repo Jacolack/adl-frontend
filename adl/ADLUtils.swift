@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ADLUser: Codable {
     var userID: Int
@@ -30,39 +31,70 @@ class ADLUser: Codable {
 }
 
 
-
 class ADLRequest {
-    static func getUserID(token: String) {
+    private static let rootUrl = "http://23.92.26.42/"
+    static func getUserID(token: String, callback: @escaping (_: Bool, _: Any?)->Void) {
         print(token)
+        
+        let url = URL(string: rootUrl + "users/login?accesstoken=" + token)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+
+        // insert json data to the request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                callback(false, error?.localizedDescription ?? "No data")
+                return
+            }
+            print(String(data: data, encoding: String.Encoding.utf8)!)
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                callback(true, responseJSON["UserID"])
+            } else {
+                callback(false, String(data: data, encoding: String.Encoding.utf8)!)
+            }
+        }
+        task.resume()
     }
     
-    
-    static func postRequest(url: String, object: Data) -> String {
+    static func postRequest(givenUrl: String, object: Data, callback: @escaping (_: Bool, _: Any?)->Void) {
         
-        print(url)
         //print(String(data: object, encoding: String.Encoding.utf8))
         
                // create post request
-       let url = URL(string: "http://httpbin.org/post")!
+        print("Posting: ", givenUrl, " with data: \n", String(data: object, encoding: String.Encoding.utf8)!)
+
+       let url = URL(string: rootUrl + givenUrl)!
        var request = URLRequest(url: url)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
        request.httpMethod = "POST"
 
        // insert json data to the request
-       request.httpBody = object
+        request.httpBody = object
 
-       let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
            guard let data = data, error == nil else {
                print(error?.localizedDescription ?? "No data")
+                callback(false, error?.localizedDescription ?? "No data")
                return
            }
+            
            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
            if let responseJSON = responseJSON as? [String: Any] {
-               print(responseJSON)
+            print(responseJSON)
+            callback(true, (responseJSON["insertId"]))
            }
        }
 
        task.resume()
-        return "succ"
     }
+    
+    static func showError(title: String?, message: String?, vc: UIViewController) {
+        let errorMsg = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        errorMsg.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        vc.present(errorMsg, animated: true, completion: nil)
+    }
+    
 }
 
