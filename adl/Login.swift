@@ -88,7 +88,9 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                                         self.dismiss(animated: true, completion: nil)
                                     }
                                 } else {
-                                    ADLRequest.showError(title: "Error", message: (resp as! String), vc: self)
+                                    createUser.dismiss(animated: true) {
+                                        ADLRequest.showError(title: "Error", message: (resp as! String), vc: self)
+                                    }
                                 }
                             }
                             }
@@ -109,7 +111,9 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                                 self.dismiss(animated: true, completion: nil)
                             }
                     } else {
-                        ADLRequest.showError(title: "Error", message: (resp as! String), vc: self)
+                        signInUser.dismiss(animated: true) {
+                            ADLRequest.showError(title: "Error", message: (resp as! String), vc: self)
+                        }
                     }
                     }
                 })
