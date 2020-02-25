@@ -15,26 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-KG-IdE">
+                                <rect key="frame" x="59.5" y="383" width="295" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="TDc-rM-sef"/>
+                                    <constraint firstAttribute="height" constant="80" id="a4q-0C-eUN"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euf-Oh-rXY">
                                 <rect key="frame" x="129" y="144" width="156" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-KG-IdE">
-                                <rect key="frame" x="59.5" y="203" width="295" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="295" id="TDc-rM-sef"/>
-                                    <constraint firstAttribute="height" constant="80" id="a4q-0C-eUN"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nVe-KG-IdE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iw8-fL-IWU"/>
+                            <constraint firstItem="euf-Oh-rXY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PZ7-mn-Zzr"/>
                             <constraint firstItem="euf-Oh-rXY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="TBO-lo-bi2"/>
-                            <constraint firstItem="euf-Oh-rXY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tuu-sV-8G9"/>
-                            <constraint firstItem="nVe-KG-IdE" firstAttribute="top" secondItem="euf-Oh-rXY" secondAttribute="bottom" constant="20" id="gEb-Ha-YJu"/>
+                            <constraint firstItem="nVe-KG-IdE" firstAttribute="top" secondItem="euf-Oh-rXY" secondAttribute="bottom" constant="200" id="gEb-Ha-YJu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
