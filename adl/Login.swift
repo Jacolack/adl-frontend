@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
         setupProviderLoginView()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
@@ -81,13 +85,16 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                             self.present(createUser, animated: true, completion: nil)
                             ADLRequest.postRequest(givenUrl: "users/create", object: jsonData, callback: {(succ, resp) in
                                 DispatchQueue.main.async {
-
                                 if (succ) {
+                                    print("created user")
+
                                     self.saveUserInKeychain(String(resp! as! Int))
                                     createUser.dismiss(animated: true) {
                                         self.dismiss(animated: true, completion: nil)
                                     }
                                 } else {
+                                    print("failed to create user")
+
                                     createUser.dismiss(animated: true) {
                                         ADLRequest.showError(title: "Error", message: (resp as! String), vc: self)
                                     }

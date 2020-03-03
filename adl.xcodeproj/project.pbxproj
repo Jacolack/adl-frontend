@@ -25,6 +25,7 @@
 		4CD1497C2405CEA700F5F3A0 /* Muli-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD1496D2405CEA700F5F3A0 /* Muli-BlackItalic.ttf */; };
 		4CD1497D2405CEA700F5F3A0 /* Muli-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD1496E2405CEA700F5F3A0 /* Muli-SemiBold.ttf */; };
 		4CD1497E2405CEA700F5F3A0 /* Muli-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD1496F2405CEA700F5F3A0 /* Muli-SemiBoldItalic.ttf */; };
+		4CFD1ACE240EFA0500949DE0 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD1ACD240EFA0500949DE0 /* MainTabController.swift */; };
 		4CFFF50123ECCACA00D8D478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFF50023ECCACA00D8D478 /* AppDelegate.swift */; };
 		4CFFF50323ECCACA00D8D478 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFF50223ECCACA00D8D478 /* SceneDelegate.swift */; };
 		4CFFF50523ECCACA00D8D478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFF50423ECCACA00D8D478 /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		4CD1496D2405CEA700F5F3A0 /* Muli-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-BlackItalic.ttf"; sourceTree = "<group>"; };
 		4CD1496E2405CEA700F5F3A0 /* Muli-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBold.ttf"; sourceTree = "<group>"; };
 		4CD1496F2405CEA700F5F3A0 /* Muli-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		4CFD1ACD240EFA0500949DE0 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		4CFFF4FD23ECCACA00D8D478 /* adl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFFF50023ECCACA00D8D478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CFFF50223ECCACA00D8D478 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				4CFFF50E23ECCACE00D8D478 /* Info.plist */,
 				4C05110B23F363BA00F254E6 /* ADLUtils.swift */,
 				4C05110D23F3678600F254E6 /* Login.swift */,
+				4CFD1ACD240EFA0500949DE0 /* MainTabController.swift */,
 			);
 			path = adl;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			files = (
 				4CFFF50523ECCACA00D8D478 /* ViewController.swift in Sources */,
 				4C05110E23F3678600F254E6 /* Login.swift in Sources */,
+				4CFD1ACE240EFA0500949DE0 /* MainTabController.swift in Sources */,
 				4C05111023F3695300F254E6 /* KeychainItem.swift in Sources */,
 				4C05110C23F363BA00F254E6 /* ADLUtils.swift in Sources */,
 				4CFFF50123ECCACA00D8D478 /* AppDelegate.swift in Sources */,

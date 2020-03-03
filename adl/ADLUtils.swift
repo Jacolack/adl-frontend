@@ -84,7 +84,9 @@ class ADLRequest {
            if let responseJSON = responseJSON as? [String: Any] {
             print(responseJSON)
             callback(true, (responseJSON["insertId"]))
-           }
+           } else {
+            callback(false, String(data: data, encoding: String.Encoding.utf8)!)
+            }
        }
 
        task.resume()
