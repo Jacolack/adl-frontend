@@ -310,13 +310,18 @@
                                                 <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="1cG-Fw-1AN"/>
                                                 <constraint firstItem="xIU-vx-pvA" firstAttribute="leading" secondItem="1xN-Of-fuw" secondAttribute="trailing" constant="199" id="5bF-x5-dJC"/>
                                                 <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="9BJ-pe-lQn"/>
+                                                <constraint firstItem="xIU-vx-pvA" firstAttribute="leading" secondItem="1xN-Of-fuw" secondAttribute="trailing" constant="199" id="9qy-TY-E5z"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="top" secondItem="s35-Kc-jef" secondAttribute="top" constant="11" id="9y0-7f-x6i"/>
                                                 <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="AwP-cu-J1g"/>
+                                                <constraint firstItem="xIU-vx-pvA" firstAttribute="leading" secondItem="1xN-Of-fuw" secondAttribute="trailing" constant="199" id="AxI-sL-rCr"/>
+                                                <constraint firstItem="1xN-Of-fuw" firstAttribute="top" secondItem="s35-Kc-jef" secondAttribute="top" constant="11" id="BaR-Ez-sEE"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="leading" secondItem="s35-Kc-jef" secondAttribute="leading" constant="20" id="GTw-Re-2tp"/>
                                                 <constraint firstItem="xIU-vx-pvA" firstAttribute="leading" secondItem="1xN-Of-fuw" secondAttribute="trailing" constant="199" id="Gku-0T-gAv"/>
                                                 <constraint firstItem="xIU-vx-pvA" firstAttribute="leading" secondItem="1xN-Of-fuw" secondAttribute="trailing" constant="199" id="Hah-Aq-qVG"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="leading" secondItem="s35-Kc-jef" secondAttribute="leading" constant="20" id="Hsv-eH-ded"/>
+                                                <constraint firstItem="1xN-Of-fuw" firstAttribute="leading" secondItem="s35-Kc-jef" secondAttribute="leading" constant="20" id="IRE-OP-zEk"/>
                                                 <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="JDD-ZY-lNd"/>
+                                                <constraint firstItem="1xN-Of-fuw" firstAttribute="top" secondItem="s35-Kc-jef" secondAttribute="top" constant="11" id="Kr9-J9-plj"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="top" secondItem="s35-Kc-jef" secondAttribute="top" constant="11" id="NIs-MI-F6g"/>
                                                 <constraint firstItem="xIU-vx-pvA" firstAttribute="leading" secondItem="1xN-Of-fuw" secondAttribute="trailing" constant="199" id="OyI-GD-oJk"/>
                                                 <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="RAC-5A-dF0"/>
@@ -336,7 +341,10 @@
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="top" secondItem="s35-Kc-jef" secondAttribute="top" constant="11" id="j0V-5t-AQf"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="leading" secondItem="s35-Kc-jef" secondAttribute="leading" constant="20" id="j7s-ho-VRe"/>
                                                 <constraint firstItem="xIU-vx-pvA" firstAttribute="leading" secondItem="1xN-Of-fuw" secondAttribute="trailing" constant="199" id="jPU-Eo-kaX"/>
+                                                <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="kN2-ed-A9a"/>
+                                                <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="kQy-wi-8Eg"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="top" secondItem="s35-Kc-jef" secondAttribute="top" constant="11" id="kVH-wy-J1f"/>
+                                                <constraint firstItem="1xN-Of-fuw" firstAttribute="leading" secondItem="s35-Kc-jef" secondAttribute="leading" constant="20" id="lPD-a5-5b4"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="leading" secondItem="s35-Kc-jef" secondAttribute="leading" constant="20" id="p9G-1a-Wx6"/>
                                                 <constraint firstItem="1xN-Of-fuw" firstAttribute="leading" secondItem="s35-Kc-jef" secondAttribute="leading" constant="20" id="q3R-lg-KjF"/>
                                                 <constraint firstAttribute="bottom" secondItem="1xN-Of-fuw" secondAttribute="bottom" constant="10" id="qNt-a3-bNQ"/>
@@ -623,7 +631,7 @@
                                 <rect key="frame" x="179.5" y="763" width="55" height="34"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="17"/>
                                 <state key="normal" title="Logout">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="logOutAct:" destination="Wm9-Eo-RIo" eventType="touchUpInside" id="84a-c1-6e9"/>
