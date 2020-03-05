@@ -29,14 +29,7 @@ class MainTabController: UITabBarController {
          return userId
        }
 
-     private func logOut() {
-         do {
-             try KeychainItem(service: "com.jacksheridan.adl", account: "userIdentifier").saveItem("")
-             showLoginViewController()
-         } catch {
-             print("Unable to save userIdentifier to keychain.")
-         }
-     }
+     
      
      func showLoginViewController() {
          let storyboard = UIStoryboard(name: "Main", bundle: nil)
