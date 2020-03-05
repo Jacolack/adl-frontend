@@ -34,6 +34,7 @@
 		4CFFF50D23ECCACE00D8D478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFF50B23ECCACE00D8D478 /* LaunchScreen.storyboard */; };
 		4CFFF51823ECCACE00D8D478 /* adlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFF51723ECCACE00D8D478 /* adlTests.swift */; };
 		4CFFF52323ECCACE00D8D478 /* adlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFF52223ECCACE00D8D478 /* adlUITests.swift */; };
+		CE5C05142411A1CB00E44E54 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C05132411A1CB00E44E54 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		4CFFF51E23ECCACE00D8D478 /* adlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFFF52223ECCACE00D8D478 /* adlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adlUITests.swift; sourceTree = "<group>"; };
 		4CFFF52423ECCACE00D8D478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5C05132411A1CB00E44E54 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				4C05110B23F363BA00F254E6 /* ADLUtils.swift */,
 				4C05110D23F3678600F254E6 /* Login.swift */,
 				4CFD1ACD240EFA0500949DE0 /* MainTabController.swift */,
+				CE5C05132411A1CB00E44E54 /* Profile.swift */,
 			);
 			path = adl;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CFFF50523ECCACA00D8D478 /* ViewController.swift in Sources */,
+				CE5C05142411A1CB00E44E54 /* Profile.swift in Sources */,
 				4C05110E23F3678600F254E6 /* Login.swift in Sources */,
 				4CFD1ACE240EFA0500949DE0 /* MainTabController.swift in Sources */,
 				4C05111023F3695300F254E6 /* KeychainItem.swift in Sources */,
