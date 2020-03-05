@@ -625,6 +625,9 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOutAct:" destination="Wm9-Eo-RIo" eventType="touchUpInside" id="84a-c1-6e9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -639,9 +642,6 @@
                         <viewLayoutGuide key="safeArea" id="Pdc-PR-VBk"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Profile" id="2Ob-8k-xNQ"/>
-                    <connections>
-                        <outlet property="logOutBtn" destination="vVf-Z0-mKC" id="dxs-9l-Frw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rrs-FJ-yxn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

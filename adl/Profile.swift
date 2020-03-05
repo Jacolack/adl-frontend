@@ -12,6 +12,6 @@ import UIKit
 class Profile : UIViewController {
     
     
-    @IBOutlet weak var logOutBtn: UIButton!
-    
+    @IBAction func logOutAct(_ sender: Any) {
+    }
 }
