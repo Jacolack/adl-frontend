@@ -42,12 +42,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nVe-KG-IdE" secondAttribute="bottom" constant="160" id="Bah-2y-cGO"/>
-                            <constraint firstItem="nVe-KG-IdE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iw8-fL-IWU"/>
-                            <constraint firstItem="euf-Oh-rXY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PZ7-mn-Zzr"/>
-                            <constraint firstItem="euf-Oh-rXY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="TBO-lo-bi2"/>
+                            <constraint firstItem="KyB-eg-Cuz" firstAttribute="bottom" secondItem="nVe-KG-IdE" secondAttribute="bottom" constant="160" id="Bah-2y-cGO"/>
+                            <constraint firstItem="nVe-KG-IdE" firstAttribute="centerX" secondItem="KyB-eg-Cuz" secondAttribute="centerX" id="Iw8-fL-IWU"/>
+                            <constraint firstItem="euf-Oh-rXY" firstAttribute="centerX" secondItem="KyB-eg-Cuz" secondAttribute="centerX" id="PZ7-mn-Zzr"/>
+                            <constraint firstItem="euf-Oh-rXY" firstAttribute="top" secondItem="KyB-eg-Cuz" secondAttribute="top" constant="100" id="TBO-lo-bi2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="KyB-eg-Cuz"/>
                     </view>
                     <connections>
                         <outlet property="loginProviderStackView" destination="nVe-KG-IdE" id="NHD-1a-7Qc"/>
@@ -162,18 +162,18 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xJr-Uh-NKs" firstAttribute="bottom" secondItem="EhK-Cn-VmU" secondAttribute="bottom" id="9V9-a7-Gm0"/>
-                            <constraint firstItem="HrR-UL-BZ6" firstAttribute="leading" secondItem="EhK-Cn-VmU" secondAttribute="leading" constant="20" id="N4u-d8-qQC"/>
-                            <constraint firstItem="HrR-UL-BZ6" firstAttribute="top" secondItem="EhK-Cn-VmU" secondAttribute="top" constant="8" id="T5Y-pa-NKZ"/>
+                            <constraint firstItem="xJr-Uh-NKs" firstAttribute="bottom" secondItem="ujy-1x-P5F" secondAttribute="bottom" id="9V9-a7-Gm0"/>
+                            <constraint firstItem="HrR-UL-BZ6" firstAttribute="leading" secondItem="ujy-1x-P5F" secondAttribute="leading" constant="20" id="N4u-d8-qQC"/>
+                            <constraint firstItem="HrR-UL-BZ6" firstAttribute="top" secondItem="ujy-1x-P5F" secondAttribute="top" constant="8" id="T5Y-pa-NKZ"/>
                             <constraint firstItem="xJr-Uh-NKs" firstAttribute="top" secondItem="xA7-g4-SyN" secondAttribute="bottom" constant="8" id="Xo7-iw-T2d"/>
-                            <constraint firstItem="xJr-Uh-NKs" firstAttribute="leading" secondItem="EhK-Cn-VmU" secondAttribute="leading" id="bP5-wx-QpP"/>
+                            <constraint firstItem="xJr-Uh-NKs" firstAttribute="leading" secondItem="ujy-1x-P5F" secondAttribute="leading" id="bP5-wx-QpP"/>
                             <constraint firstItem="xA7-g4-SyN" firstAttribute="top" secondItem="HrR-UL-BZ6" secondAttribute="bottom" constant="20" id="e3U-NG-svc"/>
-                            <constraint firstItem="xJr-Uh-NKs" firstAttribute="trailing" secondItem="EhK-Cn-VmU" secondAttribute="trailing" id="eff-tW-XAw"/>
-                            <constraint firstItem="EhK-Cn-VmU" firstAttribute="trailing" secondItem="HrR-UL-BZ6" secondAttribute="trailing" constant="20" id="o3e-qA-jb3"/>
-                            <constraint firstItem="xA7-g4-SyN" firstAttribute="leading" secondItem="EhK-Cn-VmU" secondAttribute="leading" constant="20" id="sHT-KW-wnZ"/>
-                            <constraint firstItem="EhK-Cn-VmU" firstAttribute="trailing" secondItem="xA7-g4-SyN" secondAttribute="trailing" constant="20" id="uZ3-g9-cXw"/>
+                            <constraint firstItem="xJr-Uh-NKs" firstAttribute="trailing" secondItem="ujy-1x-P5F" secondAttribute="trailing" id="eff-tW-XAw"/>
+                            <constraint firstItem="ujy-1x-P5F" firstAttribute="trailing" secondItem="HrR-UL-BZ6" secondAttribute="trailing" constant="20" id="o3e-qA-jb3"/>
+                            <constraint firstItem="xA7-g4-SyN" firstAttribute="leading" secondItem="ujy-1x-P5F" secondAttribute="leading" constant="20" id="sHT-KW-wnZ"/>
+                            <constraint firstItem="ujy-1x-P5F" firstAttribute="trailing" secondItem="xA7-g4-SyN" secondAttribute="trailing" constant="20" id="uZ3-g9-cXw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EhK-Cn-VmU"/>
+                        <viewLayoutGuide key="safeArea" id="ujy-1x-P5F"/>
                     </view>
                     <navigationItem key="navigationItem" title="Communities" id="uqc-I1-trl"/>
                 </viewController>
@@ -263,7 +263,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="P6r-Wq-oXf"/>
+                        <viewLayoutGuide key="safeArea" id="097-yE-av2"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Community" largeTitleDisplayMode="never" id="AtV-r3-Ua8">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Xth-tx-bvM">
@@ -282,8 +282,51 @@
                     <view key="view" contentMode="scaleToFill" id="wip-Er-Fy9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JAYDAY 1" translatesAutoresizingMaskIntoConstraints="NO" id="XL1-m8-GKY">
+                                <rect key="frame" x="152" y="146" width="111" height="127"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ashley Smith" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uex-tH-cGE">
+                                <rect key="frame" x="126" y="289" width="162" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Eleanor Roosevelt High School Senior, 18" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-Ke-TJA">
+                                <rect key="frame" x="54" y="338" width="306" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqx-vi-vKl">
+                                <rect key="frame" x="25" y="469" width="365" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Discussions                                                           &gt;">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4s-h6-HFp">
+                                <rect key="frame" x="25" y="537" width="365" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Polls                                                                       &gt;">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDz-Fa-Vu6">
+                                <rect key="frame" x="25" y="610" width="365" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Events                                                                   &gt;">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <viewLayoutGuide key="safeArea" id="Pdc-PR-VBk"/>
+                        <viewLayoutGuide key="safeArea" id="GS4-il-iCE"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Profile" id="2Ob-8k-xNQ"/>
                 </viewController>
@@ -308,7 +351,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <viewLayoutGuide key="safeArea" id="aI0-rm-8nH"/>
+                        <viewLayoutGuide key="safeArea" id="FQ9-Iy-HK8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Feed" id="DF6-MF-afb"/>
                 </viewController>
@@ -394,7 +437,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <viewLayoutGuide key="safeArea" id="Akp-hk-SP0"/>
+                        <viewLayoutGuide key="safeArea" id="cSi-Hg-Wzl"/>
                     </view>
                     <navigationItem key="navigationItem" title="Discussion" id="K0i-Pc-7Uf">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="m5L-b1-sFV">
@@ -540,7 +583,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="8YZ-rU-WsG"/>
+                        <viewLayoutGuide key="safeArea" id="vQa-kt-Ekw"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
@@ -770,7 +813,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="JSg-J7-Cx7"/>
+                        <viewLayoutGuide key="safeArea" id="YNW-KK-SbE"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
@@ -780,6 +823,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="JAYDAY 1" width="95" height="95"/>
         <image name="hand.thumbsup" catalog="system" width="64" height="64"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
