@@ -1432,12 +1432,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="21 Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh2-in-czx">
-                                <rect key="frame" x="194" y="290" width="46" height="16"/>
-                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Equality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jy-eq-gpb">
                                 <rect key="frame" x="20" y="123" width="80" height="14"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1519,8 +1513,9 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type to reply..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HTl-2r-fql">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type to reply..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HTl-2r-fql">
                                 <rect key="frame" x="28" y="327" width="366" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1575,12 +1570,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO1-c1-TKl">
-                                <rect key="frame" x="174" y="291" width="16" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnQ-Gp-9ap">
+                                <rect key="frame" x="172" y="290" width="71" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Likes" image="hand.thumbsup" catalog="system">
+                                <state key="normal" title=" 21 Likes" image="hand.thumbsup" catalog="system">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="10"/>
                                 </state>
                             </button>
                         </subviews>
@@ -1598,14 +1595,10 @@
                             <constraint firstItem="xRS-Fb-WAC" firstAttribute="trailing" secondItem="i3y-UV-eA0" secondAttribute="trailing" constant="20" id="ESF-p7-NLb"/>
                             <constraint firstItem="xRS-Fb-WAC" firstAttribute="trailing" secondItem="0jy-eq-gpb" secondAttribute="trailing" constant="314" id="K4W-WK-c8e"/>
                             <constraint firstItem="gFD-F0-RGw" firstAttribute="top" secondItem="hsh-F7-DxP" secondAttribute="bottom" constant="11" id="KAF-aC-Tgf"/>
-                            <constraint firstItem="EO1-c1-TKl" firstAttribute="top" secondItem="hsh-F7-DxP" secondAttribute="bottom" constant="16" id="Krk-A8-yCg"/>
                             <constraint firstItem="hsh-F7-DxP" firstAttribute="top" secondItem="i3y-UV-eA0" secondAttribute="bottom" constant="8" id="QLE-jx-l3E"/>
-                            <constraint firstItem="hh2-in-czx" firstAttribute="leading" secondItem="EO1-c1-TKl" secondAttribute="trailing" constant="4" id="Whp-vC-WqV"/>
-                            <constraint firstItem="EO1-c1-TKl" firstAttribute="leading" secondItem="gFD-F0-RGw" secondAttribute="trailing" constant="99" id="Y6K-5K-eIb"/>
                             <constraint firstItem="YPt-iH-pfg" firstAttribute="top" secondItem="ROy-M1-6jT" secondAttribute="bottom" constant="13.5" id="YG5-Cv-uVX"/>
                             <constraint firstItem="i3y-UV-eA0" firstAttribute="leading" secondItem="xRS-Fb-WAC" secondAttribute="leading" constant="20" id="a5M-Pb-cMx"/>
                             <constraint firstItem="ROy-M1-6jT" firstAttribute="top" secondItem="0jy-eq-gpb" secondAttribute="bottom" constant="6" id="aTO-sN-OCW"/>
-                            <constraint firstItem="HTl-2r-fql" firstAttribute="top" secondItem="EO1-c1-TKl" secondAttribute="bottom" constant="15" id="b5Q-HZ-bV5"/>
                             <constraint firstItem="SM7-30-Zhu" firstAttribute="top" secondItem="rE4-eg-1pG" secondAttribute="top" constant="225" id="bjm-Fb-Vzt"/>
                             <constraint firstAttribute="bottom" secondItem="7s2-wv-uhO" secondAttribute="bottom" constant="671" id="cZL-Jc-aJi"/>
                             <constraint firstItem="7s2-wv-uhO" firstAttribute="leading" secondItem="rE4-eg-1pG" secondAttribute="leading" constant="298" id="ev2-Sc-7Zv"/>
