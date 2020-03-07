@@ -1412,14 +1412,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPd-C4-eay">
-                                <rect key="frame" x="174" y="288" width="42" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Likes" image="hand.thumbsup" catalog="system">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Ashley267" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-Cq-q2O">
                                 <rect key="frame" x="20" y="161.5" width="77" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -1451,7 +1443,6 @@
                             <constraint firstItem="djK-We-DSh" firstAttribute="top" secondItem="LBc-OU-Mq9" secondAttribute="bottom" constant="7" id="D7I-6X-qvd"/>
                             <constraint firstItem="X7P-S0-BsD" firstAttribute="top" secondItem="kZp-Cq-q2O" secondAttribute="bottom" constant="17" id="Gwr-ze-Rqe"/>
                             <constraint firstItem="X7P-S0-BsD" firstAttribute="top" secondItem="kZp-Cq-q2O" secondAttribute="bottom" constant="17" id="NDy-dr-IgS"/>
-                            <constraint firstItem="IPd-C4-eay" firstAttribute="leading" secondItem="LBc-OU-Mq9" secondAttribute="trailing" constant="99" id="Nls-az-cwR"/>
                             <constraint firstItem="LBc-OU-Mq9" firstAttribute="top" secondItem="H9u-GP-b2g" secondAttribute="bottom" constant="13" id="US6-lh-f8o"/>
                             <constraint firstItem="LBc-OU-Mq9" firstAttribute="top" secondItem="H9u-GP-b2g" secondAttribute="bottom" constant="13" id="Wt9-AM-FYl"/>
                             <constraint firstItem="Pe2-8V-uA1" firstAttribute="trailing" secondItem="UWm-om-7oh" secondAttribute="trailing" constant="314" id="YRE-ZC-xCn"/>
