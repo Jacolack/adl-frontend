@@ -16,7 +16,7 @@ class CreateComm: UIViewController {
         
     }
     @IBAction func createAct(_ sender: Any) {
-        let newUser = ADLComm(inCommID: 0, inTitle: nameTF.text!, inDescription: descriptionField.text, inCreator: getUserInKeychain())
+        let newUser = ADLComm(inCommID: 0, inTitle: nameTF.text!, inDescription: descriptionField.text, inCreator: Int(getUserInKeychain())!)
                 let encoder = JSONEncoder()
                 encoder.outputFormatting = .prettyPrinted
                                 
@@ -24,7 +24,7 @@ class CreateComm: UIViewController {
                     let jsonData = try encoder.encode(newUser)
                 let createComm = UIAlertController(title: "Creating Community", message: nil, preferredStyle: .alert)
                 self.present(createComm, animated: true, completion: nil)
-                ADLRequest.postRequest(givenUrl: "comms/create", object: jsonData, callback: {(succ, resp) in
+                ADLRequest.postRequest(givenUrl: "/community/create", object: jsonData, callback: {(succ, resp) in
                     DispatchQueue.main.async {
                     if (succ) {
                         print("created Community")

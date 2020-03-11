@@ -83,7 +83,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                             let jsonData = try encoder.encode(newUser)
                             let createUser = UIAlertController(title: "Creating User", message: nil, preferredStyle: .alert)
                             self.present(createUser, animated: true, completion: nil)
-                            ADLRequest.postRequest(givenUrl: "users/create", object: jsonData, callback: {(succ, resp) in
+                            ADLRequest.postRequest(givenUrl: "/users/create", object: jsonData, callback: {(succ, resp) in
                                 DispatchQueue.main.async {
                                 if (succ) {
                                     print("created user")
@@ -132,10 +132,10 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
             // For the purpose of this demo app, show the Apple ID credential information in the `ResultViewController`.
         
         case let passwordCredential as ASPasswordCredential:
-        
+            print(passwordCredential)
             // Sign in using an existing iCloud Keychain credential.
-            let username = passwordCredential.user
-            let password = passwordCredential.password
+            //let username = passwordCredential.user
+            //let password = passwordCredential.password
             
             // For the purpose of this demo app, show the password credential as an alert.
             ADLRequest.showError(title: "Error", message: "idk", vc: self)

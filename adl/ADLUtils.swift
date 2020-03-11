@@ -31,26 +31,26 @@ class ADLUser: Codable {
 }
 
 class ADLComm: Codable {
-    var commID: Int
-    var title: String
+    var communityID: Int
+    var name: String
     var description: String
-    var creator: String
+    var ownerID: Int
     
-    init(inCommID: Int, inTitle: String, inDescription: String, inCreator: String) {
-        commID = inCommID
-        title = inTitle
+    init(inCommID: Int, inTitle: String, inDescription: String, inCreator: Int) {
+        communityID = inCommID
+        name = inTitle
         description = inDescription
-        creator = inCreator
+        ownerID = inCreator
     }
 }
 
 
 class ADLRequest {
-    private static let rootUrl = "http://23.92.26.42/"
+    private static let rootUrl = "http://23.92.26.42"
     static func getUserID(token: String, callback: @escaping (_: Bool, _: Any?)->Void) {
         print(token)
         
-        let url = URL(string: rootUrl + "users/login?accesstoken=" + token)!
+        let url = URL(string: rootUrl + "/users/login?accesstoken=" + token)!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
 
