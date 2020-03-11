@@ -60,7 +60,7 @@
         <!--Communities-->
         <scene sceneID="OZG-hG-rgo">
             <objects>
-                <viewController id="WYm-t9-zwQ" sceneMemberID="viewController">
+                <viewController id="WYm-t9-zwQ" customClass="Comms" customModule="adl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lA7-aD-U2b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,67 +117,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Zjm-32-ZPg">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zjm-32-ZPg" id="bDP-fH-0qG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkN-E5-gRL">
-                                                    <rect key="frame" x="352" y="5.5" width="30" height="33"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
-                                                    <color key="tintColor" red="0.24771243330000001" green="0.63125580550000004" blue="0.86923992630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal" title="Join"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                            <real key="value" value="8"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                            <color key="value" red="0.24771243330000001" green="0.63125580550000004" blue="0.86923992630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                            <real key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVy-NL-CUR">
-                                                    <rect key="frame" x="20" y="7" width="374" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="15"/>
-                                                    <color key="tintColor" red="0.24771243330000001" green="0.63125580550000004" blue="0.86923992630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal" title="+ Add your own"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
-                                                            <real key="value" value="8"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                                            <color key="value" red="0.24771243330000001" green="0.63125580550000004" blue="0.86923992630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                                            <real key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                    <connections>
-                                                        <segue destination="ATW-Gt-mHu" kind="show" id="Bhj-PN-uwM"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="BkN-E5-gRL" secondAttribute="trailing" constant="32" id="40g-44-sYP"/>
-                                                <constraint firstAttribute="bottom" secondItem="BkN-E5-gRL" secondAttribute="bottom" constant="5.5" id="WXb-8K-grd"/>
-                                                <constraint firstItem="BkN-E5-gRL" firstAttribute="top" secondItem="bDP-fH-0qG" secondAttribute="top" constant="5.5" id="Xwd-ci-f7y"/>
-                                                <constraint firstAttribute="trailing" secondItem="BkN-E5-gRL" secondAttribute="trailing" constant="32" id="n2F-oJ-pdo"/>
-                                                <constraint firstItem="BkN-E5-gRL" firstAttribute="centerY" secondItem="bDP-fH-0qG" secondAttribute="centerY" id="vUs-qq-B1t"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sugggested" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffp-EM-tDk">
-                                <rect key="frame" x="20" y="172" width="84" height="19"/>
+                                <rect key="frame" x="20" y="172" width="83.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -199,7 +142,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EhK-Cn-VmU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Communities" id="uqc-I1-trl"/>
+                    <navigationItem key="navigationItem" title="Communities" id="uqc-I1-trl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hk9-Fd-Llg">
+                            <connections>
+                                <action selector="addAct:" destination="WYm-t9-zwQ" id="eq8-Fc-rX4"/>
+                                <segue destination="ATW-Gt-mHu" kind="show" id="8fg-IA-b1S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PF3-cW-hbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,66 +158,31 @@
         <!--New Community-->
         <scene sceneID="Rgq-PA-y68">
             <objects>
-                <viewController id="ATW-Gt-mHu" sceneMemberID="viewController">
+                <viewController id="ATW-Gt-mHu" customClass="CreateComm" customModule="adl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Sh-tq-bsv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Community Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="snm-Eo-SLz">
-                                <rect key="frame" x="20" y="118" width="151" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Community Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="snm-Eo-SLz">
+                                <rect key="frame" x="20" y="108" width="135" height="22"/>
                                 <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Start the community discussion:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dH-cc-7kV">
-                                <rect key="frame" x="20" y="203" width="236" height="19"/>
-                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Discussion Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7Q-B5-rCh">
-                                <rect key="frame" x="20" y="236" width="151" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZc-7t-LMv">
+                                <rect key="frame" x="20" y="173" width="75" height="20"/>
                                 <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Discussion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZc-7t-LMv">
-                                <rect key="frame" x="20" y="321" width="151" height="19.5"/>
-                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What do you want to write about?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SO-6u-buY">
-                                <rect key="frame" x="20" y="360" width="374" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
-                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="What will you name this community?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-oR-bYf">
-                                <rect key="frame" x="20" y="151" width="374" height="27"/>
+                                <rect key="frame" x="20" y="138" width="374" height="27"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Title of the post?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5r1-pa-uLd">
-                                <rect key="frame" x="20" y="267" width="374" height="27"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-HB-Hcp">
-                                <rect key="frame" x="151" y="595" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-HB-Hcp">
+                                <rect key="frame" x="176" y="359" width="62" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                 <state key="normal" title="Create">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -280,26 +195,51 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAct:" destination="ATW-Gt-mHu" eventType="touchUpInside" id="kkb-ZZ-KL1"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What do you want to write about?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0SO-6u-buY">
+                                <rect key="frame" x="20" y="201" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Ig0-Wg-7MR"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4dH-cc-7kV" firstAttribute="top" secondItem="JjA-oR-bYf" secondAttribute="bottom" constant="25" id="1FV-sx-90a"/>
-                            <constraint firstItem="5r1-pa-uLd" firstAttribute="leading" secondItem="P6r-Wq-oXf" secondAttribute="leading" constant="20" id="DWL-xR-LYf"/>
-                            <constraint firstItem="P6r-Wq-oXf" firstAttribute="trailing" secondItem="5r1-pa-uLd" secondAttribute="trailing" constant="20" id="EXG-QJ-p5D"/>
-                            <constraint firstItem="CZc-7t-LMv" firstAttribute="top" secondItem="5r1-pa-uLd" secondAttribute="bottom" constant="27" id="Nd2-wE-TmQ"/>
-                            <constraint firstItem="5r1-pa-uLd" firstAttribute="top" secondItem="4dH-cc-7kV" secondAttribute="bottom" constant="59.5" id="fDQ-kX-OjQ"/>
+                            <constraint firstItem="CZc-7t-LMv" firstAttribute="leading" secondItem="P6r-Wq-oXf" secondAttribute="leading" constant="20" id="LqY-5m-16L"/>
+                            <constraint firstItem="0SO-6u-buY" firstAttribute="top" secondItem="CZc-7t-LMv" secondAttribute="bottom" constant="8" id="S8H-Kb-dks"/>
+                            <constraint firstItem="CZc-7t-LMv" firstAttribute="top" secondItem="JjA-oR-bYf" secondAttribute="bottom" constant="8" id="Yni-l2-cah"/>
+                            <constraint firstItem="JjA-oR-bYf" firstAttribute="top" secondItem="snm-Eo-SLz" secondAttribute="bottom" constant="8" id="hFi-Xu-oGa"/>
+                            <constraint firstItem="kPn-HB-Hcp" firstAttribute="centerX" secondItem="P6r-Wq-oXf" secondAttribute="centerX" id="inH-KQ-E60"/>
+                            <constraint firstItem="kPn-HB-Hcp" firstAttribute="top" secondItem="0SO-6u-buY" secondAttribute="bottom" constant="8" id="l6V-S1-TjR"/>
+                            <constraint firstItem="snm-Eo-SLz" firstAttribute="leading" secondItem="P6r-Wq-oXf" secondAttribute="leading" constant="20" id="m3s-IV-WK8"/>
                             <constraint firstItem="P6r-Wq-oXf" firstAttribute="trailing" secondItem="JjA-oR-bYf" secondAttribute="trailing" constant="20" id="p8z-AK-c0W"/>
-                            <constraint firstItem="JjA-oR-bYf" firstAttribute="top" secondItem="P6r-Wq-oXf" secondAttribute="top" constant="63" id="rSS-Ko-Zyl"/>
+                            <constraint firstItem="snm-Eo-SLz" firstAttribute="top" secondItem="P6r-Wq-oXf" secondAttribute="top" constant="20" id="rXK-Nz-eLI"/>
                             <constraint firstItem="JjA-oR-bYf" firstAttribute="leading" secondItem="P6r-Wq-oXf" secondAttribute="leading" constant="20" id="uLI-MZ-UvZ"/>
+                            <constraint firstItem="0SO-6u-buY" firstAttribute="leading" secondItem="P6r-Wq-oXf" secondAttribute="leading" constant="20" id="xQl-Zl-FRh"/>
+                            <constraint firstItem="P6r-Wq-oXf" firstAttribute="trailing" secondItem="0SO-6u-buY" secondAttribute="trailing" constant="20" id="yM5-lM-PrT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P6r-Wq-oXf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Community" largeTitleDisplayMode="never" id="AtV-r3-Ua8">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Xth-tx-bvM">
-                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="New Community" largeTitleDisplayMode="never" id="AtV-r3-Ua8"/>
+                    <connections>
+                        <outlet property="descriptionField" destination="0SO-6u-buY" id="oRD-eO-lq7"/>
+                        <outlet property="nameTF" destination="JjA-oR-bYf" id="UJq-K3-a5h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGv-0x-xbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -624,7 +564,7 @@
                                                     <rect key="frame" x="188" y="72" width="50" height="24"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="21 Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx4-kv-Qhn">
-                                                            <rect key="frame" x="8" y="4" width="46" height="16"/>
+                                                            <rect key="frame" x="8" y="4" width="38" height="16"/>
                                                             <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>

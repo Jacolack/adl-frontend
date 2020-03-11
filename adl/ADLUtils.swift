@@ -30,6 +30,20 @@ class ADLUser: Codable {
     
 }
 
+class ADLComm: Codable {
+    var commID: Int
+    var title: String
+    var description: String
+    var creator: String
+    
+    init(inCommID: Int, inTitle: String, inDescription: String, inCreator: String) {
+        commID = inCommID
+        title = inTitle
+        description = inDescription
+        creator = inCreator
+    }
+}
+
 
 class ADLRequest {
     private static let rootUrl = "http://23.92.26.42/"
