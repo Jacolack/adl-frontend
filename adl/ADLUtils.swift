@@ -30,22 +30,60 @@ class ADLUser: Codable {
     
 }
 
+class ADLPost: Codable {
+    var PostID: Int
+    var Title: String
+    var `Type`: String
+    var TextBody: String
+    var Image: String
+    var PosterID: Int
+    var CommunityID: Int
+    var Active: Int
+    var CreatedDate: String
+    var ModifiedDate: String
+
+
+    init(inCommID: Int, inTitle: String, inBody: String, inCreator: Int) {
+        PostID = 0
+        CommunityID = inCommID
+        Title = inTitle
+        TextBody = inBody
+        `Type` = "TEXT"
+        PosterID = inCreator
+        Image = ""
+        Active = 0
+        CreatedDate = ""
+        ModifiedDate = ""
+    }
+}
+
+
+
 class ADLComm: Codable {
-    var communityID: Int
-    var name: String
-    var description: String
-    var ownerID: Int
-    
-    init(inCommID: Int, inTitle: String, inDescription: String, inCreator: Int) {
-        communityID = inCommID
-        name = inTitle
-        description = inDescription
-        ownerID = inCreator
+    var CommunityID: Int
+    var Name: String
+    var Description: String
+    var OwnerID: Int
+    var Image: String
+    var Active: Int
+    var CreatedDate: String
+    var ModifiedDate: String
+
+    init(inTitle: String, inDescription: String, inCreator: Int) {
+        CommunityID = 0
+        Name = inTitle
+        Description = inDescription
+        OwnerID = inCreator
+        Image = ""
+        Active = 0
+        CreatedDate = ""
+        ModifiedDate = ""
     }
 }
 
 
 class ADLRequest {
+    public static var myUserId = ""
     private static let rootUrl = "http://23.92.26.42"
     static func getUserID(token: String, callback: @escaping (_: Bool, _: Any?)->Void) {
         print(token)
@@ -66,6 +104,62 @@ class ADLRequest {
             if let responseJSON = responseJSON as? [String: Any] {
                 callback(true, responseJSON["UserID"])
             } else {
+                callback(false, String(data: data, encoding: String.Encoding.utf8)!)
+            }
+        }
+        task.resume()
+    }
+    
+    
+    static func getComms(callback: @escaping (_: Bool, _: Any?)->Void) {
+        
+        let url = URL(string: rootUrl + "/community/getforuser?userID=" + myUserId)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+
+        // insert json data to the request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                callback(false, error?.localizedDescription ?? "No data")
+                return
+            }
+            let jsonDecoder = JSONDecoder()
+            
+            print(String(data: data, encoding: String.Encoding.utf8)!)
+            do {
+                let commArray = try jsonDecoder.decode([ADLComm].self, from: data)
+                callback(true, commArray)
+            } catch {
+                print(error)
+                callback(false, String(data: data, encoding: String.Encoding.utf8)!)
+            }
+        }
+        task.resume()
+    }
+    
+    
+    static func getPosts(communityID: String, callback: @escaping (_: Bool, _: Any?)->Void) {
+        
+        let url = URL(string: rootUrl + "/post/getforcommunity?communityID=" + communityID)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+
+        // insert json data to the request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                callback(false, error?.localizedDescription ?? "No data")
+                return
+            }
+            let jsonDecoder = JSONDecoder()
+            
+            print(String(data: data, encoding: String.Encoding.utf8)!)
+            do {
+                let commArray = try jsonDecoder.decode([ADLPost].self, from: data)
+                callback(true, commArray)
+            } catch {
+                print(error)
                 callback(false, String(data: data, encoding: String.Encoding.utf8)!)
             }
         }

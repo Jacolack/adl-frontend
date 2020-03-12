@@ -12,6 +12,11 @@
 		4C05111023F3695300F254E6 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05110F23F3695300F254E6 /* KeychainItem.swift */; };
 		4C36858724199302009FF7D3 /* CreateComm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36858624199302009FF7D3 /* CreateComm.swift */; };
 		4C36858924199367009FF7D3 /* Comms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36858824199367009FF7D3 /* Comms.swift */; };
+		4C4D34972419B61D00A38DD2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D34962419B61D00A38DD2 /* Home.swift */; };
+		4C4D34992419BCE900A38DD2 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D34982419BCE900A38DD2 /* HomeCell.swift */; };
+		4C4D349B2419C03D00A38DD2 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D349A2419C03D00A38DD2 /* Posts.swift */; };
+		4C4D349D2419C44200A38DD2 /* CreatePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D349C2419C44200A38DD2 /* CreatePost.swift */; };
+		4C4D349F2419C74300A38DD2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D349E2419C74300A38DD2 /* PostCell.swift */; };
 		4CD149702405CEA700F5F3A0 /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD149612405CEA500F5F3A0 /* Muli-Regular.ttf */; };
 		4CD149712405CEA700F5F3A0 /* Muli-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD149622405CEA500F5F3A0 /* Muli-ExtraLightItalic.ttf */; };
 		4CD149722405CEA700F5F3A0 /* Muli-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD149632405CEA500F5F3A0 /* Muli-ExtraLight.ttf */; };
@@ -63,6 +68,11 @@
 		4C05111123F36C8700F254E6 /* adl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = adl.entitlements; sourceTree = "<group>"; };
 		4C36858624199302009FF7D3 /* CreateComm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComm.swift; sourceTree = "<group>"; };
 		4C36858824199367009FF7D3 /* Comms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comms.swift; sourceTree = "<group>"; };
+		4C4D34962419B61D00A38DD2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4C4D34982419BCE900A38DD2 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		4C4D349A2419C03D00A38DD2 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		4C4D349C2419C44200A38DD2 /* CreatePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePost.swift; sourceTree = "<group>"; };
+		4C4D349E2419C74300A38DD2 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		4CD149612405CEA500F5F3A0 /* Muli-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Regular.ttf"; sourceTree = "<group>"; };
 		4CD149622405CEA500F5F3A0 /* Muli-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		4CD149632405CEA500F5F3A0 /* Muli-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -182,6 +192,11 @@
 				CE5C05132411A1CB00E44E54 /* Profile.swift */,
 				4C36858624199302009FF7D3 /* CreateComm.swift */,
 				4C36858824199367009FF7D3 /* Comms.swift */,
+				4C4D34962419B61D00A38DD2 /* Home.swift */,
+				4C4D34982419BCE900A38DD2 /* HomeCell.swift */,
+				4C4D349A2419C03D00A38DD2 /* Posts.swift */,
+				4C4D349C2419C44200A38DD2 /* CreatePost.swift */,
+				4C4D349E2419C74300A38DD2 /* PostCell.swift */,
 			);
 			path = adl;
 			sourceTree = "<group>";
@@ -353,13 +368,18 @@
 				4CFFF50523ECCACA00D8D478 /* ViewController.swift in Sources */,
 				CE5C05142411A1CB00E44E54 /* Profile.swift in Sources */,
 				4C05110E23F3678600F254E6 /* Login.swift in Sources */,
+				4C4D34972419B61D00A38DD2 /* Home.swift in Sources */,
 				4C36858724199302009FF7D3 /* CreateComm.swift in Sources */,
+				4C4D349B2419C03D00A38DD2 /* Posts.swift in Sources */,
 				4CFD1ACE240EFA0500949DE0 /* MainTabController.swift in Sources */,
+				4C4D349D2419C44200A38DD2 /* CreatePost.swift in Sources */,
 				4C05111023F3695300F254E6 /* KeychainItem.swift in Sources */,
 				4C05110C23F363BA00F254E6 /* ADLUtils.swift in Sources */,
 				4C36858924199367009FF7D3 /* Comms.swift in Sources */,
 				4CFFF50123ECCACA00D8D478 /* AppDelegate.swift in Sources */,
+				4C4D34992419BCE900A38DD2 /* HomeCell.swift in Sources */,
 				4CFFF50323ECCACA00D8D478 /* SceneDelegate.swift in Sources */,
+				4C4D349F2419C74300A38DD2 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

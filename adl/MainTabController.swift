@@ -15,7 +15,7 @@ class MainTabController: UITabBarController {
          if self.getUserInKeychain() == "" {
             showLoginViewController()
         } else {
-                   
+            ADLRequest.myUserId = self.getUserInKeychain()
         }
     }
     
